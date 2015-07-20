@@ -1,0 +1,6 @@
+<apex:page standardController="Opportunity">
+    <flow:interview name="Convert_Line_Items_to_Assets" finishLocation="/{!Opportunity.AccountId}">
+        <apex:param name="var_OppId" value="{!Opportunity.Id}"/>
+        <apex:param name="var_AcctId" value="{!Opportunity.AccountId}"/>
+    </flow:interview>
+</apex:page>
